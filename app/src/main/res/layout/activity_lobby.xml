@@ -1,178 +1,232 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/main"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation">
 
-        <ViewFlipper
-            android:id="@+id/viewFlipper"
+        <RelativeLayout
+            android:id="@+id/main"
             android:layout_width="match_parent"
-            android:layout_height="210dp"
-            android:inAnimation="@anim/slide_in"
-            android:outAnimation="@anim/slide_out">
+            android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:id="@id/imageView3"
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="210dp"
+                android:inAnimation="@anim/slide_in"
+                android:outAnimation="@anim/slide_out">
 
-                <ImageView
-                    android:id="@+id/imageView3"
+                <RelativeLayout
+                    android:id="@id/imageView3"
                     android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/photo3" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/text3"
-                    android:layout_width="170dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="13dp"
-                    android:layout_marginTop="26dp"
-                    android:background="#80000000"
-                    android:fontFamily="sans-serif-light"
-                    android:paddingStart="8dp"
-                    android:paddingTop="4dp"
-                    android:paddingEnd="8dp"
-                    android:paddingBottom="4dp"
-                    android:text="Share your knowlage about level design"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp" />
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/photo3" />
 
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="26dp"
+                        android:background="#80000000"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="4dp"
+                        android:text="Share your knowlage about level design"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-            <RelativeLayout
-                android:id="@id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                </RelativeLayout>
 
-                <ImageView
-                    android:id="@+id/imageView2"
+                <RelativeLayout
+                    android:id="@id/imageView2"
                     android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/photo2" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/text2"
-                    android:layout_width="170dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:background="#80000000"
-                    android:fontFamily="sans-serif-light"
-                    android:paddingStart="8dp"
-                    android:paddingTop="4dp"
-                    android:paddingEnd="8dp"
-                    android:paddingBottom="4dp"
-                    android:text="Discuss about programming"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp" />
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/photo2" />
 
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="#80000000"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="4dp"
+                        android:text="Discuss about programming"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-            <RelativeLayout
-                android:id="@id/imageView1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                </RelativeLayout>
 
-                <ImageView
-                    android:id="@+id/imageView1"
+                <RelativeLayout
+                    android:id="@id/imageView1"
                     android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/photo1" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/text1"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="#80000000"
-                    android:fontFamily="sans-serif-light"
-                    android:paddingStart="8dp"
-                    android:paddingTop="4dp"
-                    android:paddingEnd="8dp"
-                    android:paddingBottom="4dp"
-                    android:text="Discuss with developers"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp" />
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/photo1" />
 
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#80000000"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="4dp"
+                        android:text="Discuss with developers"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
 
-        </ViewFlipper>
+                </RelativeLayout>
 
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:layout_below="@+id/viewFlipper">
+            </ViewFlipper>
 
-            <GridLayout
+            <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:columnCount="3"
-                android:rowCount="2"
-                android:alignmentMode="alignMargins"
-                android:columnOrderPreserved="false"
-                android:useDefaultMargins="true"
-                android:layout_gravity="center">
+                android:layout_below="@+id/viewFlipper"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button1"
+                <GridLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/chat"/>
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="2"
+                    android:useDefaultMargins="true">
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/chat"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button1"
+                        style="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_buttons"
+                        android:drawableTop="@drawable/chat_neon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="5dp"
+                        android:text="Chat"
+                        android:textSize="17dp" />
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/chat"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button2"
+                        style="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_buttons"
+                        android:drawableTop="@drawable/artworks"
+                        android:drawablePadding="10dp"
+                        android:padding="5dp"
+                        android:text="artworks"
+                        android:textSize="17dp" />
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/chat"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button3"
+                        style="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_buttons"
+                        android:drawableTop="@drawable/note"
+                        android:drawablePadding="10dp"
+                        android:padding="5dp"
+                        android:text="Notepad"
+                        android:textSize="17dp" />
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/chat"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button4"
+                        style="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_buttons"
+                        android:drawableTop="@drawable/command_neon"
+                        android:drawablePadding="10dp"
+                        android:padding="5dp"
+                        android:text="Command"
+                        android:textSize="17dp" />
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableTop="@drawable/chat"/>
-            </GridLayout>
-        </FrameLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button5"
+                        style="Favorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_buttons"
+                        android:drawableTop="@drawable/favorite_neon"
+                        android:drawablePadding="10dp"
+                        android:padding="5dp"
+                        android:text="Notepad"
+                        android:textSize="17dp" />
 
-    </RelativeLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button6"
+                        style="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_buttons"
+                        android:drawableTop="@drawable/events_neon"
+                        android:drawablePadding="10dp"
+                        android:padding="5dp"
+                        android:text="Events"
+                        android:textSize="17dp" />
+                </GridLayout>
+            </FrameLayout>
 
-</ScrollView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconSize="35dp"
+        app:itemTextColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/colorBottomNavBar"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>
